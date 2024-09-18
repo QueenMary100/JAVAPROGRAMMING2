@@ -2,7 +2,7 @@ import java.util.*;
 
 public class BmiExceptionHandling{
 
-    pulic static void main(String[] args){
+    public static void main(String[] args){
 
         double weight;
         double height;
@@ -12,9 +12,9 @@ public class BmiExceptionHandling{
 
         try{
             
-            System.Out.println("Enter your weight in kg");
+            System.out.println("Enter your weight in kg");
             weight = Sc.nextDouble();
-            System.Out.println("Enter your height in kg");
+            System.out.println("Enter your height in m");
             height = Sc.nextDouble();        
 
             if(height == 0 || weight == 0)
@@ -22,7 +22,7 @@ public class BmiExceptionHandling{
                 throw new IllegalArgumentException("Weight and height must be positive numbers");
             }
 
-            bmi = weight/(Math.Pow(height,2));
+            bmi = weight/(height * height);
             System.out.printf("Your BMI is %.2f",bmi);
 
         }catch(InputMismatchException ext){

@@ -5,7 +5,7 @@ public class StudentFormGui {
     
     public static void main(String[] args){
 
-        Jlabel label = new JLabel();
+       
         JTextField txt = new JTextField();
 
         JFrame frame  = new JFrame("Student Form");
@@ -17,12 +17,12 @@ public class StudentFormGui {
         Jpanel panel = new Jpanel();
         panel.setLayout(new GridLayout(4,2));
 
-        label namelabel = new Jlabel("Name");
+        JLabel namelabel = new JLabel("Name");
         JTextField nametxt = new JTextField();
         panel.add(namelabel);
         panel.add(nametxt);
 
-        label reglabel = new Jlabel("RegNo");
+        JLabel reglabel = new JLabel("RegNo");
         JTextField regtxt = new JTextField();
 
         panel.add(reglabel);
