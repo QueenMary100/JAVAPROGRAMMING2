@@ -14,7 +14,7 @@ public class StudentFormGui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
-        Jpanel panel = new Jpanel();
+        JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4,2));
 
         JLabel namelabel = new JLabel("Name");

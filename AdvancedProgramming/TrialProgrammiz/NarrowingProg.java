@@ -13,8 +13,10 @@ public class NarrowingProg{
         area = PI * radius *radius;
         circumference = PI * 2 * radius;
 
-        System.out.printf("\nThe area of a circle of radius %.2f is %.2f", radius,area);
-        System.out.printf("\nThe circumference of a circle of radius %.2f is %.2f", radius,circumference);
+        int myarea = (int)area;
+
+        System.out.printf("\nThe area of a circle of radius %.2f is %d", radius,myarea);
+        System.out.printf("\nThe circumference of a circle of radius %.2f is %.2f %n", radius,circumference);
         
     }
 
